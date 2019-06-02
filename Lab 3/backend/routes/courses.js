@@ -11,7 +11,7 @@ var requireAuth = passport.authenticate('jwt', {session: false});
 var mongoose = require('mongoose');
 mongoose.Promise=global.Promise;
 //Set up default mongoose connection
-var mongoDB = 'mongodb+srv://canvasUser:189293Kp@canvascluster-wpxt5.mongodb.net/canvas?retryWrites=true';
+var mongoDB = '';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var {userModel,courseModel}=require("../models/models");
 // require('../config/passport')(passport);
@@ -23,8 +23,8 @@ var {userModel,courseModel}=require("../models/models");
 //   });
   const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAJNBPSJ7YXEEDZLZQ",
-  secretAccessKey: "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"
+  accessKeyId: "",
+  secretAccessKey: ""
 });
 //   con.connect(function(err) {
 //     if (err) throw err;

@@ -5,7 +5,7 @@ var jwt = require('jsonwebtoken');
 var mongoose = require('mongoose');
 mongoose.Promise=global.Promise;
 //Set up default mongoose connection
-var mongoDB = 'mongodb+srv://canvasUser:189293Kp@canvascluster-wpxt5.mongodb.net/canvas?retryWrites=true';
+var mongoDB = '';
 
 mongoose.connect(mongoDB, { poolSize:10,useNewUrlParser: true });
 
